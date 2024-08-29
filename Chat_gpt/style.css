@@ -1,0 +1,302 @@
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+}
+
+
+.navbar-brand img {
+    border-radius: 76%; /* Optional: makes the logo circular */
+    margin-right: 5px; /* Adds space between logo and text */
+  }
+  p{
+    margin: 0px;
+    padding: 0px;
+  }
+  .navbar-brand {
+    font-size: 1.25rem; /* Adjust font size as needed */
+    font-weight: bold; /* Optional: makes the brand name bold */
+  }
+  
+  .navbar {
+    padding: 0.5rem 1rem; /* Adjust padding as needed */
+  }
+
+  
+/* Hero Section */
+.carousel-item {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.carousel-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay */
+    z-index: 1;
+}
+
+.carousel-caption {
+    z-index: 2;
+}
+
+.carousel-caption h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 1.25rem;
+}
+
+.carousel-caption .btn {
+    margin-top: 20px;
+}
+
+/* About Section */
+.about-section {
+    padding: 60px 0;
+}
+
+.about-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.tab-content .tab-pane h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.tab-content .tab-pane p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.tab-content .tab-pane .btn {
+    font-size: 1rem;
+}
+
+.about-image {
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Projects Section */
+/* Project Section Styling */
+.projects-section {
+    padding: 60px 0;
+}
+
+.projects-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.projects-section p {
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+/* Project Box Styling */
+.project-box {
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.project-box:hover {
+    transform: translateY(-10px);
+}
+
+.project-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.project-box:hover .project-img img {
+    transform: scale(1.1);
+}
+
+/* Overlay Styling */
+.project-box .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(18, 1, 1, 0.945);
+    color: #f5f3f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+}
+
+.project-box:hover .overlay {
+    opacity: 1;
+}
+
+.project-box h5 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+/* Project Section Styling */
+.projects-section {
+    padding: 60px 0;
+}
+
+.projects-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.projects-section p {
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+/* Project Box Styling */
+.project-box {
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.project-box:hover {
+    transform: translateY(-10px);
+}
+
+.project-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.project-box:hover .project-img img {
+    transform: scale(1.1);
+}
+
+/* Overlay Styling */
+.project-box .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+}
+
+.project-box:hover .overlay {
+    opacity: 1;
+}
+
+.project-box h5 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+
+/* General Styling for Contact Section */
+#contact {
+    background-color: hsl(210, 8%, 86%); /* Light background color */
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  .map-container {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Styling the Heading */
+  #contact h2 {
+    font-size: 2rem; /* Font size for the heading */
+    font-weight: 600;
+    color: #343a40; /* Dark color for text */
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Styling the Form */
+  form .form-control {
+    border-radius: 4px;
+    border: 1px solid #ebeff4;
+    box-shadow: none;
+    padding: 0.75rem 1.25rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  form .form-control:focus {
+    border-color: #2484eb; /* Color when input is focused */
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+  }
+  
+  form .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 50px; /* Rounded corners */
+    padding: 10px 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  form .btn-primary:hover {
+    background-color: #070bf8;
+    border-color: #010912;
+  }
+  
+  
+
+
+  .footer {
+    background-color: #343a40; /* Dark background for the footer */
+    color: #ffffff; /* White text color */
+  }
+  
+  .footer a {
+    color: #ffffff; /* White text color for links */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  .footer a:hover {
+    text-decoration: underline; /* Add underline on hover */
+  }
+  

@@ -321,27 +321,28 @@
             <!-- Contact Form Section -->
             <div class="col-lg-6">
               <h2 class="mb-4">Get in Touch</h2>
-              <form>
+              <form action="/send" method="POST">
                 <div class="form-row">
                   <div class="form-group col-md-6">
                     <label for="inputName">Your Name</label>
-                    <input type="text" class="form-control" id="inputName" placeholder="Name">
+                    <input type="text" class="form-control" id="inputName" name="name" placeholder="Name">
                   </div>
                   <div class="form-group col-md-6">
                     <label for="inputEmail">Your Email</label>
-                    <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                    <input type="email" class="form-control" id="inputEmail" name="email" placeholder="Email">
                   </div>
                 </div>
                 <div class="form-group">
                   <label for="inputSubject">Subject</label>
-                  <input type="text" class="form-control" id="inputSubject" placeholder="Subject">
+                  <input type="text" class="form-control" id="inputSubject" name="subject" placeholder="Subject">
                 </div>
                 <div class="form-group">
                   <label for="inputMessage">Message</label>
-                  <textarea class="form-control" id="inputMessage" rows="5" placeholder="Your Message"></textarea>
+                  <textarea class="form-control" id="inputMessage" name="message" rows="5" placeholder="Your Message"></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Send Message</button>
               </form>
+              
             </div>
           </div>
         </div>
@@ -361,11 +362,9 @@
          
 
     <script src="script.js"></script>
-
-
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
 </body>
 </html>
